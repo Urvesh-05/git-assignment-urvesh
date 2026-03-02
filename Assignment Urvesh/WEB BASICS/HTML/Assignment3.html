@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="submit.html" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="Full Name">Full Name:</label>
+                <input type="text" name="Full Name" placeholder="FIRSTNAME_LASTNAME">
+            </div>
+            <div>
+                <label for="About yourself">About yourself:</label>
+                <textarea name="About yourself" rows="5" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" required>
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" name="Password" required minlength="8">
+            </div>
+            <div>
+                <label for="Phone Number">Phone Number:</label>
+                <input type="tel" value="phone number" name="Phone Number" required pattern="[0-9]{10}">
+            </div>
+            <div>
+                <label for="Website">Website:</label>
+                <input type="url" name="Website">
+            </div>
+            <div>
+                <label for="Skills">Skills:</label>
+                <input type="checkbox" name="Skills" value="HTML">HTML
+                <input type="checkbox" name="Skills" value="CSS">CSS
+                <input type="checkbox" name="Skills" value="JavaScript">JavaScript
+            </div>
+            <div>
+                <label for="Gender">Gender:</label>
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" value="Male" checked>
+                <label for="Female">Female</label>
+                <input type="radio" name="Gender" value="Female">
+            </div>
+            <div>
+                <label for="color">preferred Color:</label>
+                <input type="color" name="color">
+            </div>
+            <div>
+                <label for="number">Experience :</label>
+                <input type="number" name="Experience" placeholder="like 0,2,4,6,8,10" min="0" max="10" step="2">
+            </div>
+            <div>
+                <label for="search">Search interest:</label>
+                <input type="search" name="search">
+            </div>
+            <div>
+                <label for="date">Date of Birth:</label>
+                <input type="date" name="date" max="2005-12-31">
+            </div>
+            <div>
+                <label for="time">Available Time:</label>
+                <input type="time" name="time" begin="09:00" end="18:30">
+            </div>
+            <div>
+                <label for="month">joining Month:</label>
+                <input type="month" name="month" value="january">
+            </div>
+            <DIV>
+                <label>Training Week:</label>
+                <input type="week" name="trainingWeek" value="2026-W07">
+            </DIV>
+            <div>
+                <label for="time">Interview Time</label>
+                <SELECT NAME="time">
+                    <option VALUE="select">Select Time</option>
+                    <OPTION VALUE="9:00">9:00</OPTION>
+                    <OPTION VALUE="10:00">10:00</OPTION>
+                    <OPTION VALUE="11:00">11:00</OPTION>
+                    <OPTION VALUE="12:00">12:00</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                <label for="select"> Technology</label>
+                <SELECT NAME="select">
+                    <OPTION VALUE=".Net">.Net</OPTION>
+                    <OPTION VALUE="Angular">Angular</OPTION>
+                    <OPTION VALUE="JavaScript">JavaScript</OPTION>
+                    <OPTION VALUE="Reactjs">Reactjs</OPTION>
+                    <OPTION VALUE="QA">QA</OPTION>
+                </SELECT>
+            </div>
+
+            <div>
+                <label for="file">resume upload:</label>
+                <input type="file" name="file" accept=".pdf,.doc,.docx">
+            </div>
+
+            <div>
+                <label for="text"> user id</label>
+                <input type="hidden" name="user id" value="12345">
+            </div>
+            <div>
+                
+                <input type="submit" name="submit" value="Submit">
+            
+            
+                
+                <input type="reset" name="reset" value="Reset">
+
+            
+        
+                
+                <input type="button" name="button" value="Click me">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
